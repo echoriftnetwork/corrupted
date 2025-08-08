@@ -1,0 +1,11 @@
+{
+  "name": "RockyHollows",
+  "vanillaDerivative": "THE_VOID",
+  "generators": [
+    {
+      "generator": "rare-hills",
+      "max": 1,
+      "min": 1
+    }
+  ]
+}

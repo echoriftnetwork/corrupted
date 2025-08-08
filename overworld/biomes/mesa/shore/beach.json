@@ -1,0 +1,167 @@
+{
+  "name": "Mesa beach",
+  "color": "#865F18",
+  "rarity": 1,
+  "derivative": "DESERT",
+  "vanillaDerivative": "DESERT",
+  "generators": [
+    {
+      "min": 0,
+      "max": 1,
+      "generator": "plain"
+    }
+  ],
+  "wall": {
+    "style": {
+      "style": "STATIC"
+    },
+    "palette": [
+      {
+        "block": "minecraft:red_sandstone"
+      },
+      {
+        "block": "minecraft:red_sand"
+      }
+    ]
+  },
+  "layers": [
+    {
+      "minHeight": 3,
+      "maxHeight": 6,
+      "palette": [
+        {
+          "block": "minecraft:red_sand"
+        }
+      ]
+    },
+    {
+      "minHeight": 1,
+      "maxHeight": 3,
+      "palette": [
+        {
+          "block": "minecraft:red_sandstone"
+        }
+      ]
+    }
+  ],
+  "objects": [
+    {
+      "mode": "PAINT",
+      "density": 3,
+      "chance": 1,
+      "place": [
+        "trees/acacia/vexed1",
+        "trees/acacia/vexed2",
+        "trees/acacia/vexed3"
+      ]
+    },
+    {
+      "place": [
+        "trees/acacia/vexed1",
+        "trees/acacia/vexed2",
+        "trees/acacia/vexed3"
+      ],
+      "chance": 0.45,
+      "edit": [
+        {
+          "find": [
+            {
+              "block": "minecraft:oak_log"
+            },
+            {
+              "block": "minecraft:spruce_log"
+            },
+            {
+              "block": "minecraft:birch_log"
+            },
+            {
+              "block": "minecraft:jungle_log"
+            },
+            {
+              "block": "minecraft:acacia_log"
+            },
+            {
+              "block": "minecraft:dark_oak_log"
+            }
+          ],
+          "replace": {
+            "palette": [
+              {
+                "block": "minecraft:sculk"
+              },
+              {
+                "block": "minecraft:reinforced_deepslate"
+              }
+            ]
+          }
+        },
+        {
+          "find": [
+            {
+              "block": "minecraft:oak_leaves"
+            },
+            {
+              "block": "minecraft:spruce_leaves"
+            },
+            {
+              "block": "minecraft:birch_leaves"
+            },
+            {
+              "block": "minecraft:jungle_leaves"
+            },
+            {
+              "block": "minecraft:acacia_leaves"
+            },
+            {
+              "block": "minecraft:dark_oak_leaves"
+            }
+          ],
+          "replace": {
+            "style": {
+              "style": "PERLIN",
+              "zoom": 0.5
+            },
+            "palette": [
+              {
+                "block": "minecraft:sculk_vein"
+              },
+              {
+                "block": "minecraft:air"
+              },
+              {
+                "block": "minecraft:sculk"
+              }
+            ]
+          }
+        }
+      ],
+      "rotation": {
+        "enabled": true,
+        "yAxis": {
+          "enabled": true,
+          "interval": 90,
+          "min": 0,
+          "max": 360
+        }
+      }
+    }
+  ],
+  "slab": {
+    "style": {
+      "style": "STATIC"
+    },
+    "palette": [
+      {
+        "data": {
+          "waterlogged": false,
+          "type": "bottom"
+        },
+        "block": "minecraft:red_sandstone_slab"
+      },
+      {
+        "weight": 2,
+        "block": "minecraft:air"
+      }
+    ]
+  }
+}

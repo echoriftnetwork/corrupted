@@ -1,0 +1,242 @@
+{
+  "name": "Tropical Beach",
+  "color": "#2F7A5C",
+  "rarity": 1,
+  "derivative": "JUNGLE",
+  "vanillaDerivative": "JUNGLE",
+  "generators": [
+    {
+      "min": -3,
+      "max": 3,
+      "generator": "plain"
+    }
+  ],
+  "wall": {
+    "palette": [
+      {
+        "block": "minecraft:smooth_sandstone"
+      }
+    ]
+  },
+  "layers": [
+    {
+      "minHeight": 3,
+      "maxHeight": 6,
+      "palette": [
+        {
+          "block": "minecraft:sand"
+        }
+      ]
+    },
+    {
+      "minHeight": 1,
+      "maxHeight": 3,
+      "palette": [
+        {
+          "block": "minecraft:dirt"
+        }
+      ]
+    }
+  ],
+  "objects": [
+    {
+      "chance": 0.34,
+      "density": 2,
+      "edit": [
+        {
+          "find": [
+            {
+              "block": "minecraft:player_wall_head"
+            }
+          ],
+          "replace": {
+            "palette": [
+              {
+                "block": "minecraft:air"
+              }
+            ]
+          }
+        }
+      ],
+      "rotation": {
+        "yAxis": {
+          "min": 0,
+          "max": 270,
+          "interval": 90,
+          "enabled": true
+        },
+        "enabled": true
+      },
+      "place": [
+        "trees/jungle/palm1",
+        "trees/jungle/palm2",
+        "trees/jungle/palm3",
+        "trees/jungle/palm12",
+        "trees/jungle/palm11",
+        "trees/jungle/palm10",
+        "trees/jungle/palm9"
+      ]
+    },
+    {
+      "place": [
+        "trees/jungle/palm1",
+        "trees/jungle/palm2",
+        "trees/jungle/palm3",
+        "trees/jungle/palm12",
+        "trees/jungle/palm11",
+        "trees/jungle/palm10",
+        "trees/jungle/palm9"
+      ],
+      "chance": 0.45,
+      "edit": [
+        {
+          "find": [
+            {
+              "block": "minecraft:oak_log"
+            },
+            {
+              "block": "minecraft:spruce_log"
+            },
+            {
+              "block": "minecraft:birch_log"
+            },
+            {
+              "block": "minecraft:jungle_log"
+            },
+            {
+              "block": "minecraft:acacia_log"
+            },
+            {
+              "block": "minecraft:dark_oak_log"
+            }
+          ],
+          "replace": {
+            "palette": [
+              {
+                "block": "minecraft:sculk"
+              },
+              {
+                "block": "minecraft:reinforced_deepslate"
+              }
+            ]
+          }
+        },
+        {
+          "find": [
+            {
+              "block": "minecraft:oak_leaves"
+            },
+            {
+              "block": "minecraft:spruce_leaves"
+            },
+            {
+              "block": "minecraft:birch_leaves"
+            },
+            {
+              "block": "minecraft:jungle_leaves"
+            },
+            {
+              "block": "minecraft:acacia_leaves"
+            },
+            {
+              "block": "minecraft:dark_oak_leaves"
+            }
+          ],
+          "replace": {
+            "style": {
+              "style": "PERLIN",
+              "zoom": 0.5
+            },
+            "palette": [
+              {
+                "block": "minecraft:sculk_vein"
+              },
+              {
+                "block": "minecraft:air"
+              },
+              {
+                "block": "minecraft:sculk"
+              }
+            ]
+          }
+        }
+      ],
+      "rotation": {
+        "enabled": true,
+        "yAxis": {
+          "enabled": true,
+          "interval": 90,
+          "min": 0,
+          "max": 360
+        }
+      }
+    }
+  ],
+  "decorators": [
+    {
+      "chance": 0.01,
+      "variance": {
+        "style": "STATIC"
+      },
+      "zoom": 0.3,
+      "palette": [
+        {
+          "data": {
+            "face": "floor",
+            "powered": false,
+            "facing": "east"
+          },
+          "block": "minecraft:jungle_button"
+        },
+        {
+          "block": "minecraft:air"
+        },
+        {
+          "data": {
+            "face": "floor",
+            "powered": false,
+            "facing": "south"
+          },
+          "block": "minecraft:jungle_button"
+        }
+      ],
+      "style": {
+        "style": "STATIC"
+      }
+    },
+    {
+      "partOf": "SHORE_LINE",
+      "verticalZoom": 0.2,
+      "chance": 0.21,
+      "variance": {
+        "style": "SIMPLEX"
+      },
+      "stackMax": 6,
+      "zoom": 5,
+      "palette": [
+        {
+          "block": "minecraft:sugar_cane"
+        }
+      ],
+      "style": {
+        "style": "STATIC"
+      },
+      "heightVariance": {
+        "style": "NOWHERE"
+      },
+      "stackMin": 1
+    }
+  ],
+  "effects": [
+    {
+      "particleAltX": 0.301,
+      "particleAltY": -0.33885,
+      "particleAltZ": 0.301,
+      "chance": 1,
+      "particleEffect": "TOTEM_OF_UNDYING",
+      "particleOffset": 12,
+      "interval": 550,
+      "particleCount": 0
+    }
+  ]
+}

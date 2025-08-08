@@ -1,0 +1,183 @@
+{
+  "name": "Terralost",
+  "color": "#446600",
+  "rarity": 2,
+  "landBiomes": [
+    "terralost/amethyst-rainforest",
+    "terralost/ancient-sands",
+    "terralost/amethyst-canyon",
+    "terralost/alpine-grove",
+    "terralost/alpine-highlands"
+  ],
+  "landBiomeZoom": 3,
+  "shoreBiomes": [
+    "tundra/shore/beach"
+  ],
+  "seaBiomes": [
+    "mountain/sea/river"
+  ],
+  "entitySpawners": [
+    "tundra/passive",
+    "tundra/hostile",
+    "tundra/cave"
+  ],
+  "shoreHeightMin": 2.2,
+  "shoreHeightMax": 5.2,
+  "carving": {
+    "ravines": [
+      {
+        "rarity": 25,
+        "ravine": "calcite/main"
+      }
+    ],
+    "caves": [
+      {
+        "breakSurface": true,
+        "cave": "rocky/main",
+        "rarity": 50,
+        "caveStartHeight": {
+          "max": 400,
+          "min": 15,
+          "style": {
+            "style": "STATIC"
+          }
+        }
+      }
+    ]
+  },
+  "shoreHeightZoom": 1.14,
+  "riverThickness": 0.025,
+  "loot": {
+    "mode": "FALLBACK",
+    "tables": [
+      "tropical/dungeon"
+    ]
+  },
+  "objects": [
+    {
+      "place": [
+        "mush-huts/huts",
+        "mush-huts/paths"
+      ],
+      "chance": 0.03,
+      "density": 0.8,
+      "rotation": {
+        "enabled": true,
+        "yAxis": {
+          "enabled": true,
+          "interval": 90,
+          "min": 0,
+          "max": 360
+        }
+      },
+      "edit": [
+        {
+          "find": [
+            {
+              "block": "minecraft:oak_planks"
+            },
+            {
+              "block": "minecraft:oak_log"
+            },
+            {
+              "block": "minecraft:oak_wood"
+            },
+            {
+              "block": "minecraft:spruce_planks"
+            },
+            {
+              "block": "minecraft:spruce_log"
+            },
+            {
+              "block": "minecraft:birch_planks"
+            },
+            {
+              "block": "minecraft:birch_log"
+            }
+          ],
+          "replace": {
+            "palette": [
+              {
+                "block": "minecraft:deepslate"
+              },
+              {
+                "block": "minecraft:polished_deepslate"
+              }
+            ]
+          }
+        },
+        {
+          "find": [
+            {
+              "block": "minecraft:glass_pane"
+            },
+            {
+              "block": "minecraft:glass"
+            }
+          ],
+          "replace": {
+            "palette": [
+              {
+                "block": "minecraft:void_air"
+              }
+            ]
+          }
+        },
+        {
+          "find": [
+            {
+              "block": "minecraft:grass_block"
+            },
+            {
+              "block": "minecraft:dirt"
+            }
+          ],
+          "replace": {
+            "style": {
+              "style": "PERLIN",
+              "zoom": 0.6
+            },
+            "palette": [
+              {
+                "block": "minecraft:sculk"
+              },
+              {
+                "block": "minecraft:sculk_vein"
+              }
+            ]
+          }
+        },
+        {
+          "find": [
+            {
+              "block": "minecraft:torch"
+            }
+          ],
+          "replace": {
+            "palette": [
+              {
+                "block": "minecraft:sculk_shrieker"
+              }
+            ]
+          }
+        }
+      ],
+      "translate": {
+        "yRandom": 4,
+        "y": -1
+      }
+    },
+    {
+      "place": [
+        "ancient-city"
+      ],
+      "chance": 0.02,
+      "bottom": true,
+      "density": 0.6,
+      "translate": {
+        "y": -30,
+        "yRandom": 20
+      }
+    }
+  ]
+}
